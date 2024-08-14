@@ -1,0 +1,366 @@
+
+*{
+    border:1px red solid ;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-large;
+    /* background-color:rgb(223, 149, 233) ; */
+}
+
+
+/* Header for unchanging part */
+@media only screen 
+    and (min-width: 430px)  { 
+
+        .bigcontainer{
+        display: flex;
+       height: 100vh;
+        }
+
+    .side_bar{
+    display: flex;
+    /* padding: 5px; */
+    height: 85vh;
+    /* width: 82px; */
+    background-color: rgb(89, 51, 125);
+    }
+
+    
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+    min-height: 10vh;
+    background-color: aquamarine;
+    
+}
+#dynamicbutton{
+    display: flex;
+    margin-bottom: -60px;
+    justify-content: space-between;
+    /* gap: 0px;     */
+}
+
+/* #bannercontainer{
+    display: flex;
+flex-direction: column-reverse;
+padding: 10px;
+} */
+/* #welcomecontainer{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+} */
+
+#box_1{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(198, 151, 228);
+}
+
+
+/* middle */
+
+ #workinghours{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* padding:30px; */
+}
+
+
+#workinghours2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(198, 151, 228);
+}
+
+/* bottom */
+#locationcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding:30px; */
+    text-align: center;
+}
+
+#box_3{
+    margin: 30px;
+    background-color: rgb(198, 151, 228);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* button */
+.btn {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+    scale: .90;
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+
+   /* side bar ish */
+   @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+display: flex;
+    background: #212121;
+    border-right: 1px solid #e5e5e5;
+    position: absolute;
+    top: 133px;
+    bottom: 0;
+    height: 62vh;
+    left: 0;
+    width: 35px;
+    overflow: hidden;
+    -webkit-transition: width .05s linear;
+    transition: width .05s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 1000;
+}
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+@media only screen and (min-width: 430px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        gap: 15px;
+        padding: 15px;
+        min-height: 10vh;
+        background-color: aquamarine;
+    }
+}
+
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+        /* display: flex; */
+        outline: 0;
+        margin-left: -1%;
+        padding: 0;
+        position: relative;
+        top: -34px;
+    left: -5px;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#000000;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+/* caraseol test  */
+.pic-ctn {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-top: 15vh;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
