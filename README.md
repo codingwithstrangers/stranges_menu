@@ -5,16 +5,13 @@
 
 
 <p align="center">
-<img src="https://imgur.com/K2TjQ7F.jpg" width="600"/>
+<img src="https://imgur.com/eGSLcyO.jpg" width="600"/>
 </p>
 
-### Strangest Login
-
-Before we get into the meat and bones, a few disclaimers: This is part of my training exercise for a self-paced homework assignment. If you want to use this, feel free!
-
+### Strangest Menu
 ### What is This
 
-This is a template for creating a website login page. The login features an animation based on the time of day or night. The sun and moon will move according to the time on your local system. Additionally, the template allows users to submit their login credentials with the password displayed as "***". Icons for social media are included and made clickable.
+I want to understand how to use the DM and make a web page that can load up new data with out going to the server so basically like a menu. Another goal was to make the side bar responsive as a side. the DOM should load everything and change dynamically. this can be used for a app or main website. 
 
 ### Why Did I Do This
 
@@ -23,9 +20,6 @@ Practice! This was my first login page, and I did it because I had to.
 ### How Users Can Use This
 
 **For Users:**
-- Hire a programmer.
-- Tell them to read this.
-
 **For Programmers:**
 - Don't use this code, bro. Seriously.
 - I used vanilla HTML, CSS, and JS—no frameworks. I know, right?
